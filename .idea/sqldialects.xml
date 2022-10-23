@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/datasource/BatchDatabase.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/job/OrderBatchConfiguration.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/OrderBatch/src/main/resources/schema.sql" dialect="MySQL" />
+  </component>
+</project>

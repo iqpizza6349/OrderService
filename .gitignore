@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/OrderAPIServer/build/
+/OrderAPIServer/build/classes/java/main/
+/OrderBatch/build/
+/OrderBatch/build/classes/java/main/
+/OrderBusiness/build/
+/OrderBusiness/build/classes/java/main/
+/OrderCommon/build/
+/OrderCommon/build/classes/java/main/

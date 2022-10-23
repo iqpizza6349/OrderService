@@ -1,0 +1,110 @@
+buildscript {
+    ext {
+        springBootVersion = '2.7.4'
+        dependencyManagementVersion = '1.0.11.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        dependencies {
+            classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+            classpath "io.spring.gradle:dependency-management-plugin:${dependencyManagementVersion}"
+        }
+    }
+}
+
+allprojects {
+    group 'me.iqpizza'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    sourceCompatibility = '11'
+
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok'
+        developmentOnly 'org.springframework.boot:spring-boot-devtools'
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+        annotationProcessor 'org.projectlombok:lombok'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        testImplementation 'io.projectreactor:reactor-test'
+    }
+
+    tasks.named('test') {
+        useJUnitPlatform()
+    }
+}
+
+project(':OrderCommon') {
+    bootJar {
+        enabled = false
+    }
+
+    jar {
+        enabled = true
+    }
+
+    dependencies {
+
+    }
+}
+
+project(':OrderAPIServer') {
+    bootJar {
+        enabled = true
+    }
+
+    jar {
+        enabled = false
+    }
+
+    dependencies {
+        implementation project(':OrderCommon')
+    }
+}
+
+project(':OrderBatch') {
+    bootJar {
+        enabled = true
+    }
+
+    jar {
+        enabled = false
+    }
+
+    dependencies {
+        implementation project(':OrderCommon')
+    }
+}
+
+project(':OrderBusiness') {
+    bootJar {
+        enabled = false
+    }
+
+    jar {
+        enabled = true
+    }
+
+    dependencies {
+        implementation project(':OrderCommon')
+    }
+}
