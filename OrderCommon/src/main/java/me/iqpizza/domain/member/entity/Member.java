@@ -2,6 +2,7 @@ package me.iqpizza.domain.member.entity;
 
 import lombok.*;
 import me.iqpizza.domain.order.entity.Order;
+import me.iqpizza.global.exception.DomainException;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -23,7 +24,19 @@ public class Member {
     private MemberRole role = MemberRole.CUSTOMER;
 
     public enum MemberRole {
-        CUSTOMER, STAFF
+        CUSTOMER, STAFF;
+        
+        public static MemberRole convertFrom(String name) {
+            if (name == null || name.isEmpty() || name.isBlank()) {
+                throw new NotDefinedRoleException();
+            }
+
+            try {
+                return MemberRole.valueOf(name.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                throw new NotDefinedRoleException();
+            }
+        }
     }
 
     @Builder.Default
@@ -36,5 +49,11 @@ public class Member {
 
     public void removeOrder(Order order) {
         orders.remove(order);
+    }
+
+    public static class NotDefinedRoleException extends DomainException {
+        public NotDefinedRoleException() {
+            super(409, "해당 권한이 존재하지 않습니다.");
+        }
     }
 }

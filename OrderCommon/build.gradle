@@ -1,6 +1,8 @@
 plugins {
     id 'java'
+    id 'java-library'
 }
+
 
 group 'me.iqpizza'
 version '1.0-SNAPSHOT'
