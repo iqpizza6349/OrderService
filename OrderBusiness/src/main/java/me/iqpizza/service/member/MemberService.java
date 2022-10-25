@@ -31,6 +31,6 @@ public class MemberService {
     @Transactional(readOnly = true)
     public MemberRO findById(final long userId) {
         return new MemberRO(memberRepository.findById(userId)
-                .orElseThrow());
+                .orElseThrow(Member.NotFoundException::new));
     }
 }

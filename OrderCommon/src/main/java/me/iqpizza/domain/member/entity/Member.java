@@ -64,4 +64,10 @@ public class Member {
         }
     }
 
+    public static class NotFoundException extends DomainException {
+        public NotFoundException() {
+            super(404, "존재하지 않는 회원입니다.");
+        }
+    }
+
 }

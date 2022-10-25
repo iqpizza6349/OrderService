@@ -27,7 +27,6 @@ public class MemberServiceTest {
     @InjectMocks
     private MemberService memberService;
 
-
     @Test
     @DisplayName("유저 이름 중복으로 인한 회원가입 실패")
     void registerFailedTest() {
