@@ -17,6 +17,7 @@ public class Member {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, unique = true)
     private String username;
 
     @Builder.Default
@@ -56,4 +57,11 @@ public class Member {
             super(409, "해당 권한이 존재하지 않습니다.");
         }
     }
+
+    public static class AlreadyExistsUsernameException extends DomainException {
+        public AlreadyExistsUsernameException() {
+            super(409, "이미 해당 username이 존재합니다.");
+        }
+    }
+
 }

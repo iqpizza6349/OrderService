@@ -6,7 +6,7 @@ import me.iqpizza.domain.member.entity.Member;
 @Getter
 public class MemberRO {
 
-    private final long id;
+    private final Long id;
     private final String username;
     private final Member.MemberRole role;
 
