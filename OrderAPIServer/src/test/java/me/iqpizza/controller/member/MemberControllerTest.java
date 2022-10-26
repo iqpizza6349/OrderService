@@ -10,11 +10,15 @@ import me.iqpizza.service.member.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.test.context.support.WithAnonymousUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
@@ -36,12 +40,17 @@ public class MemberControllerTest {
     @MockBean
     private MemberService memberService;
 
+    @Spy
+    private final PasswordEncoder encoder = new BCryptPasswordEncoder();
+
     @Test
+    @WithAnonymousUser
     @DisplayName("회원가입 컨트롤러 테스트")
     void registerMemberControllerTest() throws Exception {
         // given
-        final SignDto signDto = new SignDto("username", null);
-        MemberRO memberRO = new MemberRO(signDto.toEntity(Member.MemberRole.CUSTOMER));
+        final SignDto signDto = new SignDto("username", "password", null);
+        MemberRO memberRO = new MemberRO(signDto
+                .toEntity(Member.MemberRole.CUSTOMER, encoder));
         String content = objectMapper.writeValueAsString(signDto);
         given(memberService.register(any(SignDto.class)))
                 .willReturn(memberRO);
