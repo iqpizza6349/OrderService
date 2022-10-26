@@ -73,4 +73,10 @@ public class Member {
         }
     }
 
+    public static class UnauthorizedException extends DomainException {
+        public UnauthorizedException() {
+            super(401, "회원 인증에 실패하였습니다.");
+        }
+    }
+
 }

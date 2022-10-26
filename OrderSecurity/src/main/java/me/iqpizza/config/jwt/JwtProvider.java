@@ -20,13 +20,14 @@ public class JwtProvider {
     private final JwtProperties jwtProperties;
     private final SignatureAlgorithm algorithm = SignatureAlgorithm.HS256;
 
-    public String generateAccessToken(long id, String role) {
-        return generateToken(IDENT_ACCESS, id, role, jwtProperties.getExpirationSecond());
+    public String generateAccessToken(AuthenticateUser authenticateUser) {
+        return generateToken(IDENT_ACCESS, authenticateUser.getId(),
+                authenticateUser.getRole(), jwtProperties.getExpirationSecond());
     }
 
-    public String generateRefreshToken(long id, String role) {
-        return generateToken(IDENT_REFRESH, id, role,
-                jwtProperties.getExpirationSecond() * 168);
+    public String generateRefreshToken(AuthenticateUser authenticateUser) {
+        return generateToken(IDENT_REFRESH, authenticateUser.getId(),
+                authenticateUser.getRole(), jwtProperties.getExpirationSecond() * 168);
     }
 
     private String generateToken(String type, long id, String role, long expSecond) {
@@ -82,6 +83,10 @@ public class JwtProvider {
         return new AuthenticateUser(id, role);
     }
 
+    public long getExpirationSecond() {
+        return jwtProperties.getExpirationSecond();
+    }
+
     private Key generateKey(String type) {
         String secretKey;
         if (type.equals(IDENT_ACCESS)) {
@@ -94,5 +99,4 @@ public class JwtProvider {
         byte[] apiKeySecret = Base64.decodeBase64(secretKey);
         return new SecretKeySpec(apiKeySecret, algorithm.getJcaName());
     }
-
 }

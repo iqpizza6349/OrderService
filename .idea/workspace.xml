@@ -93,7 +93,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MemberServiceTest.loginSuccessTest">
+  <component name="RunManager" selected="Gradle.OrderService [clean]">
     <configuration name="MemberServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,6 +140,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="OrderService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="OrderAPIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="OrderService.OrderAPIServer.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.iqpizza.OrderAPIApplication" />
@@ -156,8 +177,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MemberServiceTest.loginSuccessTest" />
+        <item itemvalue="Gradle.OrderService [clean]" />
         <item itemvalue="Gradle.MemberServiceTest" />
+        <item itemvalue="Gradle.MemberServiceTest.loginSuccessTest" />
       </list>
     </recent_temporary>
   </component>
