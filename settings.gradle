@@ -4,4 +4,5 @@ include 'OrderAPIServer'
 include 'OrderBatch'
 include 'OrderCommon'
 include 'OrderBusiness'
+include 'OrderSecurity'
 

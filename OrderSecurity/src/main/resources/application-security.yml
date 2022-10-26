@@ -1,0 +1,6 @@
+
+order:
+  jwt:
+    secret: 434f4d49545f504c454153455f50415353
+    refresh: 495f5052454645525f56414e494c4c41
+    expiration-second: 3600000
