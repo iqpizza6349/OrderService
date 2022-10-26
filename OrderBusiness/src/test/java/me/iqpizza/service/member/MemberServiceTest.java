@@ -9,7 +9,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -27,11 +29,14 @@ public class MemberServiceTest {
     @InjectMocks
     private MemberService memberService;
 
+    @Spy
+    private PasswordEncoder encoder;
+
     @Test
     @DisplayName("유저 이름 중복으로 인한 회원가입 실패")
     void registerFailedTest() {
         // given
-        final SignDto signDto = new SignDto("username", null);
+        final SignDto signDto = new SignDto("username", "password", null);
 
         // when
         when(memberRepository.existsByUsername(anyString()))
@@ -47,8 +52,8 @@ public class MemberServiceTest {
     @DisplayName("회원가입 성공")
     void registerSuccessTest() {
         // given
-        final SignDto signDto = new SignDto("username", null);
-        Member member = signDto.toEntity(Member.MemberRole.CUSTOMER);
+        final SignDto signDto = new SignDto("username", "password", null);
+        Member member = signDto.toEntity(Member.MemberRole.CUSTOMER, encoder);
         given(memberRepository.existsByUsername(anyString()))
                 .willReturn(false);
 

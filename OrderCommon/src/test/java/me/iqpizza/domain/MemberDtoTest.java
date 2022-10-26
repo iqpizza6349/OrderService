@@ -36,7 +36,7 @@ public class MemberDtoTest {
     @DisplayName("회원가입, 이름이 굉장히 짧아 실패한 케이스")
     void registerFailedByTooShortUsername() {
         // given
-        final SignDto signDto = new SignDto("u", null);
+        final SignDto signDto = new SignDto("u", "p", null);
 
         // when
         Set<ConstraintViolation<SignDto>> violations = validator.validate(signDto);
@@ -49,7 +49,7 @@ public class MemberDtoTest {
     @DisplayName("회원가입, 정의되지 않은 권한 요청하여 실패한 케이스")
     void registerFailedByNotDefinedRole() {
         // given
-        final SignDto signDto = new SignDto("username", "super_user");
+        final SignDto signDto = new SignDto("username", "password", "super_user");
 
         // when
         assert signDto.getRole() != null;
@@ -62,7 +62,7 @@ public class MemberDtoTest {
     @DisplayName("회원가입, 성공적으로 완료된 케이스")
     void registerSuccess() {
         // given
-        final SignDto signDto = new SignDto("username", "staff");
+        final SignDto signDto = new SignDto("username", "password", "staff");
 
         // when
         Set<ConstraintViolation<SignDto>> violations = validator.validate(signDto);

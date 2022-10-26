@@ -68,7 +68,7 @@ project(':OrderCommon') {
     }
 
     dependencies {
-
+        implementation project(':OrderSecurity')
     }
 }
 
@@ -84,6 +84,7 @@ project(':OrderAPIServer') {
     dependencies {
         implementation project(':OrderCommon')
         implementation project(':OrderBusiness')
+        implementation project(':OrderSecurity')
     }
 }
 
@@ -112,5 +113,20 @@ project(':OrderBusiness') {
 
     dependencies {
         implementation project(':OrderCommon')
+        implementation project(':OrderSecurity')
+    }
+}
+
+project(':OrderSecurity') {
+    bootJar {
+        enabled = false
+    }
+
+    jar {
+        enabled = true
+    }
+
+    dependencies {
+
     }
 }

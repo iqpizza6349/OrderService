@@ -11,6 +11,7 @@
         <module name="OrderService.OrderCommon.main" />
         <module name="OrderService.OrderBusiness.main" />
         <module name="OrderService.OrderAPIServer.main" />
+        <module name="OrderService.OrderSecurity.main" />
         <module name="OrderService.OrderBatch.main" />
       </profile>
     </annotationProcessing>
