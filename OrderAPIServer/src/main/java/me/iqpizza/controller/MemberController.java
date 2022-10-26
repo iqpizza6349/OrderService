@@ -1,7 +1,9 @@
 package me.iqpizza.controller;
 
 import lombok.RequiredArgsConstructor;
+import me.iqpizza.domain.member.dto.LoginDto;
 import me.iqpizza.domain.member.dto.SignDto;
+import me.iqpizza.domain.member.ro.LoginRO;
 import me.iqpizza.domain.member.ro.MemberRO;
 import me.iqpizza.service.member.MemberService;
 import org.springframework.http.HttpStatus;
@@ -20,6 +22,12 @@ public class MemberController {
     @ResponseStatus(HttpStatus.CREATED)
     public MemberRO registerMember(@RequestBody @Valid SignDto signDto) {
         return memberService.register(signDto);
+    }
+
+    @PostMapping("/login")
+    @ResponseStatus(HttpStatus.CREATED)
+    public LoginRO loginMember(@RequestBody @Valid LoginDto loginDto) {
+        return memberService.login(loginDto);
     }
     
     @GetMapping
