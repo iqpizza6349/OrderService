@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'java-library'
+    id 'java-test-fixtures'
 }
 
 group 'me.iqpizza'
@@ -14,6 +15,7 @@ dependencies {
     api 'org.springframework.boot:spring-boot-starter-security'
     api 'commons-codec:commons-codec:1.13'
     api 'org.springframework.boot:spring-boot-starter-web'
+    api 'org.springframework.security:spring-security-test'
     implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
     implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
     implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'

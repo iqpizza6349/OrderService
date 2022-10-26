@@ -8,3 +8,10 @@
 /OrderBusiness/build/classes/java/main/
 /OrderCommon/build/
 /OrderCommon/build/classes/java/main/
+
+/*/build/resources
+/*/build/tmp
+/*/build/libs
+/*/build/classes
+
+*.class

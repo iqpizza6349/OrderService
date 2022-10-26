@@ -5,3 +5,4 @@ spring:
   profiles:
     include:
       - data
+      - security

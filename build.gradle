@@ -85,6 +85,7 @@ project(':OrderAPIServer') {
         implementation project(':OrderCommon')
         implementation project(':OrderBusiness')
         implementation project(':OrderSecurity')
+        testImplementation project(':OrderSecurity')
     }
 }
 

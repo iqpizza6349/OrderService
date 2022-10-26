@@ -4,28 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment="">
+    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: member service login test">
       <change afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/exception/ExceptionAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/OrderAPIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/OrderAPIApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/test/java/me/iqpizza/controller/member/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/test/java/me/iqpizza/controller/member/MemberControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/member/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/member/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/member/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/member/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/member/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/member/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderSecurity/src/main/java/me/iqpizza/config/jwt/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderSecurity/src/main/java/me/iqpizza/config/jwt/JwtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderSecurity/src/main/java/me/iqpizza/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderSecurity/src/main/java/me/iqpizza/config/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderSecurity/src/main/resources/application-security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderSecurity/src/main/resources/application-security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderSecurity/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrderSecurity/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +26,44 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OrderService" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OrderService" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OrderService" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +78,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -93,7 +121,30 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.OrderService [clean]">
+  <component name="RunManager" selected="Gradle.MemberServiceTest">
+    <configuration name="MemberControllerTest.registerMemberControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":OrderAPIServer:test" />
+            <option value="--tests" />
+            <option value="&quot;me.iqpizza.controller.member.MemberControllerTest.registerMemberControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MemberServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,6 +212,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="OrderService [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="OrderAPIApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="OrderService.OrderAPIServer.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.iqpizza.OrderAPIApplication" />
@@ -177,8 +249,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.OrderService [clean]" />
         <item itemvalue="Gradle.MemberServiceTest" />
+        <item itemvalue="Gradle.OrderService [clean]" />
+        <item itemvalue="Gradle.MemberControllerTest.registerMemberControllerTest" />
+        <item itemvalue="Gradle.OrderService [test]" />
         <item itemvalue="Gradle.MemberServiceTest.loginSuccessTest" />
       </list>
     </recent_temporary>
@@ -192,8 +266,31 @@
       <option name="presentableId" value="Default" />
       <updated>1666765580146</updated>
       <workItem from="1666765583880" duration="3483000" />
-      <workItem from="1666773583870" duration="323000" />
+      <workItem from="1666773583870" duration="1016000" />
+      <workItem from="1666779472609" duration="2207000" />
     </task>
+    <task id="LOCAL-00001" summary=":lock: :: fix security issue about permit uri">
+      <created>1666774123104</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666774123104</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":lock: :: fix security issue about jwt secret key">
+      <created>1666774251239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666774251239</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":white_check_mark: :: member service login test">
+      <created>1666774485378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666774485378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +306,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":lock: :: fix security issue about permit uri" />
+    <MESSAGE value=":lock: :: fix security issue about jwt secret key" />
+    <MESSAGE value=":white_check_mark: :: member service login test" />
+    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: member service login test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
