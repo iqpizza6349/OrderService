@@ -42,7 +42,7 @@ public class SecurityConfig {
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         http.authorizeRequests()
-                .antMatchers("/**").permitAll()
+                .antMatchers("/members/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .authenticationManager(manager)
