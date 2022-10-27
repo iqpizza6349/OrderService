@@ -49,7 +49,7 @@ public class MemberService {
         }
 
         AuthenticateUser authenticateUser =
-                new AuthenticateUser(member.getId(), member.getRole().name());
+                new AuthenticateUser(member.getId(), member.getUsername(), member.getRole().name());
         authenticateUserStorage.addUser(authenticateUser);
         String accessToken = jwtProvider.generateAccessToken(authenticateUser);
         String refreshToken = jwtProvider.generateRefreshToken(authenticateUser);
@@ -62,7 +62,7 @@ public class MemberService {
 
     @Transactional(readOnly = true)
     @Lock(LockModeType.PESSIMISTIC_READ)
-    protected Member findMemberById(final long userId) {
+    public Member findMemberById(final long userId) {
         return memberRepository.findById(userId)
                 .orElseThrow(Member.NotFoundException::new);
     }
