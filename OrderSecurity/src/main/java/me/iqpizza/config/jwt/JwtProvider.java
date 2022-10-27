@@ -22,19 +22,23 @@ public class JwtProvider {
 
     public String generateAccessToken(AuthenticateUser authenticateUser) {
         return generateToken(IDENT_ACCESS, authenticateUser.getId(),
-                authenticateUser.getRole(), jwtProperties.getExpirationSecond());
+                authenticateUser.getRole(), authenticateUser.getUsername(),
+                jwtProperties.getExpirationSecond());
     }
 
     public String generateRefreshToken(AuthenticateUser authenticateUser) {
         return generateToken(IDENT_REFRESH, authenticateUser.getId(),
-                authenticateUser.getRole(), jwtProperties.getExpirationSecond() * 168);
+                authenticateUser.getRole(), authenticateUser.getUsername(),
+                jwtProperties.getExpirationSecond() * 168);
     }
 
-    private String generateToken(String type, long id, String role, long expSecond) {
+    private String generateToken(String type, long id, String role,
+                                 String username, long expSecond) {
         final Date tokenCreationDate = new Date();
-        Map<String, Object> claims = new HashMap<>(2);
+        Map<String, Object> claims = new HashMap<>(3);
         claims.put("type", type);
         claims.put("role", role);
+        claims.put("username", username);
 
         return Jwts.builder()
                 .setClaims(claims)
@@ -79,8 +83,10 @@ public class JwtProvider {
     public AuthenticateUser parseAuthenticateUser(String token) {
         final long id = Long.parseLong(extractSubjectFromToken(token));
         Jws<Claims> claimsJws = extractRoleFromToken(token);
-        final String role = (String) claimsJws.getBody().get("role");
-        return new AuthenticateUser(id, role);
+        Claims claims = claimsJws.getBody();
+        final String role = (String) claims.get("role");
+        final String name = (String) claims.get("username");
+        return new AuthenticateUser(id, name, role);
     }
 
     public long getExpirationSecond() {

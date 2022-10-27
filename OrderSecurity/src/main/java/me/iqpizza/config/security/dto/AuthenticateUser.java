@@ -14,6 +14,7 @@ import java.util.Collections;
 public class AuthenticateUser implements UserDetails {
 
     private final long id;
+    private final String username;
     private final String role;
 
     @Override
@@ -24,11 +25,6 @@ public class AuthenticateUser implements UserDetails {
     @Override
     public String getPassword() {
         return null;
-    }
-
-    @Override
-    public String getUsername() {
-        return String.valueOf(id);
     }
 
     @Override
