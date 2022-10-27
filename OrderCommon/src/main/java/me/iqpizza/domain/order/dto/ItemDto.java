@@ -17,7 +17,6 @@ public class ItemDto {
     private String name;
 
     @Min(1)
-    @Max(255)
     private int price;
 
     @Min(1)

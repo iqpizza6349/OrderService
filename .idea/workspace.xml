@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":card_file_box: :: add entity relation setter methods">
+    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: add collection validation test">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/exception/ExceptionAdvisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/ro/quantity/QuantityRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/global/valiadator/CollectionValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderCommon/src/test/java/me/iqpizza/domain/ValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/member/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/LineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/LineItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/OrderPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/OrderPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/ShippingAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/ShippingAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/CreditCardPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/MobilePhonePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/MobilePhonePayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/ItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/ItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/OrderDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,8 +121,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.OrderService [clean]">
-    <configuration name="MemberControllerTest.registerMemberControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ValidatorTest">
+    <configuration name="CollectionDtoTest.CollectionValidationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,9 +133,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderAPIServer:test" />
+            <option value=":OrderCommon:test" />
             <option value="--tests" />
-            <option value="&quot;me.iqpizza.controller.member.MemberControllerTest.registerMemberControllerTest&quot;" />
+            <option value="&quot;me.iqpizza.domain.CollectionDtoTest.CollectionValidationTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,29 +168,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberServiceTest.loginSuccessTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":OrderBusiness:test" />
-            <option value="--tests" />
-            <option value="&quot;me.iqpizza.service.member.MemberServiceTest.loginSuccessTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="OrderService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -213,23 +189,48 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OrderService [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ValidatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":OrderCommon:test" />
+            <option value="--tests" />
+            <option value="&quot;me.iqpizza.domain.ValidatorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ValidatorTest.fieldDtoValidFailTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":OrderCommon:test" />
+            <option value="--tests" />
+            <option value="&quot;me.iqpizza.domain.ValidatorTest.fieldDtoValidFailTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -250,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ValidatorTest" />
+        <item itemvalue="Gradle.ValidatorTest.fieldDtoValidFailTest" />
+        <item itemvalue="Gradle.CollectionDtoTest.CollectionValidationTest" />
         <item itemvalue="Gradle.OrderService [clean]" />
         <item itemvalue="Gradle.MemberServiceTest" />
-        <item itemvalue="Gradle.MemberControllerTest.registerMemberControllerTest" />
-        <item itemvalue="Gradle.OrderService [test]" />
-        <item itemvalue="Gradle.MemberServiceTest.loginSuccessTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +270,7 @@
       <workItem from="1666765583880" duration="3483000" />
       <workItem from="1666773583870" duration="1016000" />
       <workItem from="1666779472609" duration="5364000" />
-      <workItem from="1666827599502" duration="6231000" />
+      <workItem from="1666827599502" duration="10708000" />
     </task>
     <task id="LOCAL-00001" summary=":lock: :: fix security issue about permit uri">
       <created>1666774123104</created>
@@ -320,7 +321,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666833728561</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=":card_file_box: :: add entity relation setter methods">
+      <created>1666833847349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666833847349</updated>
+    </task>
+    <task id="LOCAL-00009" summary=":monocle_face: :: add DTO and RO classes">
+      <created>1666834005032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666834005032</updated>
+    </task>
+    <task id="LOCAL-00010" summary=":zap: :: add place an order service / update member find service">
+      <created>1666834121617</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666834121617</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +368,9 @@
     <MESSAGE value=":white_check_box: :: add pass member controller test" />
     <MESSAGE value=":lock: :: add field username to AuthenticateUser" />
     <MESSAGE value=":card_file_box: :: add entity relation setter methods" />
-    <option name="LAST_COMMIT_MESSAGE" value=":card_file_box: :: add entity relation setter methods" />
+    <MESSAGE value=":monocle_face: :: add DTO and RO classes" />
+    <MESSAGE value=":zap: :: add place an order service / update member find service" />
+    <MESSAGE value=":white_check_mark: :: add collection validation test" />
+    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: add collection validation test" />
   </component>
 </project>

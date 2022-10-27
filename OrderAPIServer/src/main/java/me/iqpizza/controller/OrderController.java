@@ -1,30 +1,43 @@
 package me.iqpizza.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.RestController;
+import me.iqpizza.config.security.dto.AuthenticateUser;
+import me.iqpizza.domain.order.dto.OrderDto;
+import me.iqpizza.domain.order.ro.OrderRO;
+import me.iqpizza.domain.order.ro.bill.BillRO;
+import me.iqpizza.global.valiadator.CollectionValidator;
+import me.iqpizza.service.order.OrderService;
+import me.iqpizza.service.order.customer.CustomerService;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.validation.BindException;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/orders")
 public class OrderController {
 
-    /**
-     * Customer 는 물품과 수량을 설정하여 구매한다.
-     */
+    private final OrderService orderService;
+    private final CustomerService customerService;
+    private final CollectionValidator collectionValidator;
 
-    /**
-     * Staff 는 해당 물품의 상태를 수정할 수 있다.
-     */
+    @GetMapping
+    public OrderRO findOrderState(@RequestParam("order-id") long orderId) {
+        return orderService.findOrderState(orderId);
+    }
 
-    /**
-     * Customer 는 주문을 취소할 수 있다.
-     */
+    @PostMapping
+    public BillRO placeAnOrder(@AuthenticationPrincipal AuthenticateUser user,
+                               @RequestBody @Valid OrderDto orderDto,
+                               BindingResult bindingResult) throws BindException {
+        collectionValidator.validate(orderDto, bindingResult);
+        if (bindingResult.hasErrors()) {
+            throw new BindException(bindingResult);
+        }
 
-    /**
-     * 매일 오후 9시마다 오늘 주문량을 저장한다.
-     */
-
-    /**
-     *
-     */
-
+        return customerService.placeAnOrder(user, orderDto);
+    }
 }
