@@ -4,16 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: add collection validation test">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/exception/ExceptionAdvisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/ro/quantity/QuantityRO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/global/valiadator/CollectionValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderCommon/src/test/java/me/iqpizza/domain/ValidatorTest.java" afterDir="false" />
+    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: update security controller test">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/order_service_db.2QN1bQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/order_batch_db.dJlBTg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-10-27_PM_10_05_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-10-27_PM_10_05__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a7c223a-0bd4-4bd7-b0b7-ed3c4d587eda.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97bead19-cea2-4603-b722-330543fb73de.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/ItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/ItemDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderAPIServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/test/java/me/iqpizza/controller/member/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/test/java/me/iqpizza/controller/member/MemberControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +53,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/OrderAPIServer">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -41,13 +66,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="OrderService" type="f1a62948:ProjectNode" />
+                <item name="OrderAPIServer" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OrderService" type="f1a62948:ProjectNode" />
+                <item name="OrderAPIServer" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="OrderService" type="f1a62948:ProjectNode" />
+                <item name="OrderAPIServer" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -87,6 +119,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Gf2yq5NeuHZoGOK1ojHcgXT5Nt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -105,9 +138,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "spring.configuration.checksum": "4344942095e5143943e93fe4d9b90712"
   }
 }]]></component>
@@ -121,8 +154,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ValidatorTest">
-    <configuration name="CollectionDtoTest.CollectionValidationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.OrderService:OrderAPIServer [test]">
+    <configuration name="MemberControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,9 +166,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderCommon:test" />
+            <option value=":OrderAPIServer:test" />
             <option value="--tests" />
-            <option value="&quot;me.iqpizza.domain.CollectionDtoTest.CollectionValidationTest&quot;" />
+            <option value="&quot;me.iqpizza.controller.member.MemberControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -145,7 +178,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MemberControllerTest.registerMemberControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -156,9 +189,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderBusiness:test" />
+            <option value=":OrderAPIServer:test" />
             <option value="--tests" />
-            <option value="&quot;me.iqpizza.service.member.MemberServiceTest&quot;" />
+            <option value="&quot;me.iqpizza.controller.member.MemberControllerTest.registerMemberControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,48 +222,44 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ValidatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderService [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderCommon:test" />
-            <option value="--tests" />
-            <option value="&quot;me.iqpizza.domain.ValidatorTest&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ValidatorTest.fieldDtoValidFailTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderService:OrderAPIServer [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/OrderAPIServer" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderCommon:test" />
-            <option value="--tests" />
-            <option value="&quot;me.iqpizza.domain.ValidatorTest.fieldDtoValidFailTest&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -251,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ValidatorTest" />
-        <item itemvalue="Gradle.ValidatorTest.fieldDtoValidFailTest" />
-        <item itemvalue="Gradle.CollectionDtoTest.CollectionValidationTest" />
+        <item itemvalue="Gradle.OrderService:OrderAPIServer [test]" />
+        <item itemvalue="Gradle.MemberControllerTest.registerMemberControllerTest" />
+        <item itemvalue="Gradle.MemberControllerTest" />
         <item itemvalue="Gradle.OrderService [clean]" />
-        <item itemvalue="Gradle.MemberServiceTest" />
+        <item itemvalue="Gradle.OrderService [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -371,6 +400,7 @@
     <MESSAGE value=":monocle_face: :: add DTO and RO classes" />
     <MESSAGE value=":zap: :: add place an order service / update member find service" />
     <MESSAGE value=":white_check_mark: :: add collection validation test" />
-    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: add collection validation test" />
+    <MESSAGE value=":white_check_mark: :: update security controller test" />
+    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: update security controller test" />
   </component>
 </project>
