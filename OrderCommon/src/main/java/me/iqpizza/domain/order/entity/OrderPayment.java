@@ -1,5 +1,6 @@
 package me.iqpizza.domain.order.entity;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import lombok.*;
 
 import javax.persistence.*;
@@ -38,9 +39,14 @@ public abstract class OrderPayment {
             public static final String CREDIT_CARD = "CREDIT_CARD";
             public static final String MOBILE_PHONE = "MOBILE_PHONE";
         }
+
+        @JsonCreator
+        public static PaymentMethod from(String s) {
+            return PaymentMethod.valueOf(s.toUpperCase());
+        }
     }
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "order_id", referencedColumnName = "id")
     private Order order;
 }

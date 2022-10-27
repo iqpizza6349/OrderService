@@ -20,6 +20,7 @@ public class LineItem {
 
     private short qty;
 
+    @Setter
     @ManyToOne
     @JoinColumn(name = "order_id", referencedColumnName = "id")
     private Order order;
