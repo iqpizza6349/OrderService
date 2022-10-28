@@ -11,8 +11,10 @@ import me.iqpizza.domain.order.entity.Order;
 import me.iqpizza.domain.order.entity.OrderPayment;
 import me.iqpizza.domain.order.entity.ShippingAddress;
 import me.iqpizza.domain.order.repository.OrderRepository;
+import me.iqpizza.domain.order.ro.OrderRO;
 import me.iqpizza.domain.order.ro.bill.BillRO;
 import me.iqpizza.service.member.MemberService;
+import me.iqpizza.service.order.OrderFindService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,9 +28,10 @@ import java.util.stream.Collectors;
 public class CustomerService {
 
     private final OrderRepository orderRepository;
+    private final OrderFindService orderFindService;
     private final MemberService memberService;
 
-    public BillRO placeAnOrder(AuthenticateUser user, OrderDto orderDto) {
+    public BillRO placeAnOrder(AuthenticateUser user, final OrderDto orderDto) {
         Member member = memberService.findMemberById(user.getId());
         ShippingAddress shippingAddress = ShippingAddress.builder()
                 .zipCode(orderDto.getZipCode())
@@ -63,5 +66,19 @@ public class CustomerService {
         items.forEach(order::addItem);
         order.addOrUpdatePaymentMethod(amount, paymentMethod, content);
         return new BillRO(orderRepository.save(order));
+    }
+
+    public OrderRO cancelOrder(AuthenticateUser user, final long orderId) {
+        Member member = memberService.findMemberById(user.getId());
+        Order order = orderFindService.findByIdAndMember(orderId, member);
+        Order.OrderState orderState = order.getState();
+        if (!orderState.isShippingChangeable()
+                || orderState == Order.OrderState.CANCELED) {
+            // 취소가 불가능한 경우, 예외 발생
+            throw new Order.IrrevocableOrderException();
+        }
+
+        order.setState(Order.OrderState.CANCELED);
+        return new OrderRO(orderRepository.save(order));
     }
 }

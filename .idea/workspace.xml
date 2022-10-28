@@ -4,38 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: update security controller test">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/order_service_db.2QN1bQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/order_batch_db.dJlBTg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-10-27_PM_10_05_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022-10-27_PM_10_05__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5a7c223a-0bd4-4bd7-b0b7-ed3c4d587eda.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97bead19-cea2-4603-b722-330543fb73de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: add customer service cancel order">
+      <change afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderFindService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/order/customer/CustomerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/order_service_db.2QN1bQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/order_batch_db.dJlBTg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderAPIServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/test/java/me/iqpizza/controller/member/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/test/java/me/iqpizza/controller/member/MemberControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/repository/OrderRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +122,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Project.color": "0a5f40",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -141,7 +138,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "4344942095e5143943e93fe4d9b90712"
+    "spring.configuration.checksum": "149e984cf80739901e3b2a97f40d38ef"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -154,8 +151,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.OrderService:OrderAPIServer [test]">
-    <configuration name="MemberControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CustomerServiceTest.cancelOrderSuccess">
+    <configuration name="CustomerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,9 +163,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderAPIServer:test" />
+            <option value=":OrderBusiness:test" />
             <option value="--tests" />
-            <option value="&quot;me.iqpizza.controller.member.MemberControllerTest&quot;" />
+            <option value="&quot;me.iqpizza.service.order.customer.CustomerServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +175,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberControllerTest.registerMemberControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CustomerServiceTest.cancelOrderSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,9 +186,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":OrderAPIServer:test" />
+            <option value=":OrderBusiness:test" />
             <option value="--tests" />
-            <option value="&quot;me.iqpizza.controller.member.MemberControllerTest.registerMemberControllerTest&quot;" />
+            <option value="&quot;me.iqpizza.service.order.customer.CustomerServiceTest.cancelOrderSuccess&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,44 +198,48 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OrderService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CustomerServiceTest.onlyPaymentMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":OrderBusiness:test" />
+            <option value="--tests" />
+            <option value="&quot;me.iqpizza.service.order.customer.CustomerServiceTest.onlyPaymentMethod&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OrderService [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CustomerServiceTest.placeAnOrderLogicTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":OrderBusiness:test" />
+            <option value="--tests" />
+            <option value="&quot;me.iqpizza.service.order.customer.CustomerServiceTest.placeAnOrderLogicTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -280,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CustomerServiceTest.cancelOrderSuccess" />
+        <item itemvalue="Gradle.CustomerServiceTest" />
+        <item itemvalue="Gradle.CustomerServiceTest.placeAnOrderLogicTest" />
+        <item itemvalue="Gradle.CustomerServiceTest.onlyPaymentMethod" />
         <item itemvalue="Gradle.OrderService:OrderAPIServer [test]" />
-        <item itemvalue="Gradle.MemberControllerTest.registerMemberControllerTest" />
-        <item itemvalue="Gradle.MemberControllerTest" />
-        <item itemvalue="Gradle.OrderService [clean]" />
-        <item itemvalue="Gradle.OrderService [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -300,6 +301,7 @@
       <workItem from="1666773583870" duration="1016000" />
       <workItem from="1666779472609" duration="5364000" />
       <workItem from="1666827599502" duration="10708000" />
+      <workItem from="1666920349610" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary=":lock: :: fix security issue about permit uri">
       <created>1666774123104</created>
@@ -371,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666834121617</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=":white_check_mark: :: update security controller test">
+      <created>1666882076041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666882076041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +410,7 @@
     <MESSAGE value=":zap: :: add place an order service / update member find service" />
     <MESSAGE value=":white_check_mark: :: add collection validation test" />
     <MESSAGE value=":white_check_mark: :: update security controller test" />
-    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: update security controller test" />
+    <MESSAGE value=":white_check_mark: :: add customer service cancel order" />
+    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: add customer service cancel order" />
   </component>
 </project>

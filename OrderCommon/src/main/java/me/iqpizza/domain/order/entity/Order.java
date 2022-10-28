@@ -65,6 +65,7 @@ public class Order {
         this.orderPayment = orderPayment;
     }
 
+    @Setter
     @Builder.Default
     @Enumerated(EnumType.STRING)
     private OrderState state = OrderState.PAYMENT_WAITING;
@@ -98,6 +99,9 @@ public class Order {
         }
     }
 
-
-
+    public static class IrrevocableOrderException extends DomainException {
+        public IrrevocableOrderException() {
+            super(409, "취소할 수 없는 주문입니다.");
+        }
+    }
 }
