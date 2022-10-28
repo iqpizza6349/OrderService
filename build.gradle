@@ -85,6 +85,7 @@ project(':OrderAPIServer') {
         implementation project(':OrderCommon')
         implementation project(':OrderBusiness')
         implementation project(':OrderSecurity')
+        implementation project(':OrderStaffBusiness')
         testImplementation project(':OrderSecurity')
     }
 }
@@ -100,6 +101,7 @@ project(':OrderBatch') {
 
     dependencies {
         implementation project(':OrderCommon')
+        implementation project(':OrderStaffBusiness')
     }
 }
 
@@ -129,5 +131,19 @@ project(':OrderSecurity') {
 
     dependencies {
 
+    }
+}
+
+project(':OrderStaffBusiness') {
+    bootJar {
+        enabled = false
+    }
+
+    jar {
+        enabled = true
+    }
+
+    dependencies {
+        implementation project(':OrderSecurity')
     }
 }

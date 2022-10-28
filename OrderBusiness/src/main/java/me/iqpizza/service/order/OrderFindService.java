@@ -4,11 +4,13 @@ import lombok.RequiredArgsConstructor;
 import me.iqpizza.domain.member.entity.Member;
 import me.iqpizza.domain.order.entity.Order;
 import me.iqpizza.domain.order.repository.OrderRepository;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.LockModeType;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -29,5 +31,8 @@ public class OrderFindService {
                 .orElseThrow(Order.NotFoundException::new);
     }
 
-
+    @Lock(LockModeType.PESSIMISTIC_READ)
+    public List<Order> findByMember(Member member, Pageable pageable) {
+        return orderRepository.findAllByMember(member, pageable).toList();
+    }
 }

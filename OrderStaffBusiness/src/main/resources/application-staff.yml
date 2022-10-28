@@ -1,0 +1,7 @@
+
+staff:
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_batch_db
+    username: root
+    password: CoffeeMaster
+    driver-class-name: com.mysql.cj.jdbc.Driver

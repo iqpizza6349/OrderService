@@ -4,34 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":white_check_mark: :: add customer service cancel order">
-      <change afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderFindService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/order/customer/CustomerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/order_service_db.2QN1bQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54c1a736-4fae-4d51-b92b-e9b47894ca45/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/order_batch_db.dJlBTg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_board_db.AjVTOw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_assignment_db.HwGxOw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_db.78V4mw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a59e0cf-3c0b-4422-aaf1-678c3f4064e9/storage_v2/_src_/schema/web_programming_homepage_db.HsiHCA.meta" beforeDir="false" />
+    <list default="true" id="4bbcacfe-eb73-4df3-94a4-dc63a075d4d0" name="Changes" comment=":card_file_box: :: separation entities each core modules">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4598c6d7-7405-4128-9424-0fdc21436873.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4598c6d7-7405-4128-9424-0fdc21436873/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4598c6d7-7405-4128-9424-0fdc21436873/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4598c6d7-7405-4128-9424-0fdc21436873/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4598c6d7-7405-4128-9424-0fdc21436873/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5a7c223a-0bd4-4bd7-b0b7-ed3c4d587eda.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/97bead19-cea2-4603-b722-330543fb73de.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d31a3ce7-b755-4601-bf49-5d05ae051ede.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d31a3ce7-b755-4601-bf49-5d05ae051ede/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d31a3ce7-b755-4601-bf49-5d05ae051ede/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d31a3ce7-b755-4601-bf49-5d05ae051ede/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d31a3ce7-b755-4601-bf49-5d05ae051ede/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/staff/StaffFindService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/order/staff/StaffServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/dto/StateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/global/config/datasource/OrderDatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/java/me/iqpizza/config/datasource/StaffDatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/java/me/iqpizza/domain/staff/entity/Quantity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/java/me/iqpizza/domain/staff/entity/Sales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/java/me/iqpizza/domain/staff/repository/QuantityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/java/me/iqpizza/domain/staff/repository/SalesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/resources/application-staff.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/OrderAPIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/java/me/iqpizza/OrderAPIApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderAPIServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderAPIServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/OrderBatchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/OrderBatchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/datasource/BatchDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/datasource/BatchDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/datasource/DatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/datasource/DatabaseProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderStaffBusiness/src/main/java/me/iqpizza/config/datasource/StaffDatabaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/datasource/ModuleProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/global/config/datasource/OrderDatabaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/job/BatchConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/job/BatchConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/job/OrderBatchConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBatch/src/main/java/me/iqpizza/batch/config/job/OrderBatchConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBatch/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBatch/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderFindService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/OrderFindService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/main/java/me/iqpizza/service/order/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/order/customer/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderBusiness/src/test/java/me/iqpizza/service/order/customer/CustomerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/member/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/LineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/LineItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/OrderPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/OrderPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/ShippingAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/ShippingAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/CreditCardPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/MobilePhonePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/entity/payment/MobilePhonePayment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderCommon/src/main/java/me/iqpizza/domain/order/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +78,9 @@
         <task path="$PROJECT_DIR$/OrderAPIServer">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/OrderBatch">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -62,20 +91,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="OrderService" type="f1a62948:ProjectNode" />
-                <item name="OrderAPIServer" type="2d1252cf:ModuleNode" />
+                <item name="OrderBatch" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="OrderService" type="f1a62948:ProjectNode" />
-                <item name="OrderAPIServer" type="2d1252cf:ModuleNode" />
+                <item name="OrderBatch" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrderService" type="f1a62948:ProjectNode" />
-                <item name="OrderAPIServer" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -131,14 +153,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "temurin-11",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "149e984cf80739901e3b2a97f40d38ef"
+    "spring.configuration.checksum": "140a31233bc99c2809833539a35e5496"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -151,7 +179,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CustomerServiceTest.cancelOrderSuccess">
+  <component name="RunManager" selected="Spring Boot.OrderBatchApplication">
     <configuration name="CustomerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -244,10 +272,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="OrderService:OrderAPIServer [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderService:OrderBatch [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/OrderAPIServer" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/OrderBatch" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -255,7 +283,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -281,11 +309,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderService:OrderBatch [clean]" />
         <item itemvalue="Gradle.CustomerServiceTest.cancelOrderSuccess" />
         <item itemvalue="Gradle.CustomerServiceTest" />
         <item itemvalue="Gradle.CustomerServiceTest.placeAnOrderLogicTest" />
         <item itemvalue="Gradle.CustomerServiceTest.onlyPaymentMethod" />
-        <item itemvalue="Gradle.OrderService:OrderAPIServer [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +329,10 @@
       <workItem from="1666773583870" duration="1016000" />
       <workItem from="1666779472609" duration="5364000" />
       <workItem from="1666827599502" duration="10708000" />
-      <workItem from="1666920349610" duration="1743000" />
+      <workItem from="1666920349610" duration="3603000" />
+      <workItem from="1666944892897" duration="1968000" />
+      <workItem from="1666960071946" duration="2333000" />
+      <workItem from="1666970939277" duration="7661000" />
     </task>
     <task id="LOCAL-00001" summary=":lock: :: fix security issue about permit uri">
       <created>1666774123104</created>
@@ -380,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666882076041</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=":white_check_mark: :: add customer service cancel order">
+      <created>1666922099554</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666922099554</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +449,7 @@
     <MESSAGE value=":white_check_mark: :: add collection validation test" />
     <MESSAGE value=":white_check_mark: :: update security controller test" />
     <MESSAGE value=":white_check_mark: :: add customer service cancel order" />
-    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: :: add customer service cancel order" />
+    <MESSAGE value=":card_file_box: :: separation entities each core modules" />
+    <option name="LAST_COMMIT_MESSAGE" value=":card_file_box: :: separation entities each core modules" />
   </component>
 </project>

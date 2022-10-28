@@ -11,10 +11,13 @@ import me.iqpizza.domain.order.entity.Order;
 import me.iqpizza.domain.order.entity.OrderPayment;
 import me.iqpizza.domain.order.entity.ShippingAddress;
 import me.iqpizza.domain.order.repository.OrderRepository;
+import me.iqpizza.domain.order.ro.OrderListRO;
 import me.iqpizza.domain.order.ro.OrderRO;
 import me.iqpizza.domain.order.ro.bill.BillRO;
 import me.iqpizza.service.member.MemberService;
 import me.iqpizza.service.order.OrderFindService;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -80,5 +83,12 @@ public class CustomerService {
 
         order.setState(Order.OrderState.CANCELED);
         return new OrderRO(orderRepository.save(order));
+    }
+
+    public OrderListRO findByMember(AuthenticateUser user, final int page) {
+        Member member = memberService.findMemberById(user.getId());
+        Pageable pageable = PageRequest.of(page, 10);
+        return new OrderListRO(orderFindService.findByMember(member, pageable)
+                .stream().map(OrderRO::new).collect(Collectors.toList()));
     }
 }

@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 public class BatchConfiguration extends DefaultBatchConfigurer {
 
     @Override
-    public void setDataSource(@Qualifier("batchDataSource") DataSource dataSource) {
+    public void setDataSource(@Qualifier("staffDataSource") DataSource dataSource) {
         super.setDataSource(dataSource);
     }
 }

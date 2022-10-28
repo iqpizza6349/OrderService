@@ -1,16 +1,13 @@
-package me.iqpizza.batch.config.datasource;
+package me.iqpizza.global.config.datasource;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.ConstructorBinding;
 import org.springframework.stereotype.Component;
 
 @Data
 @Component
-@ConfigurationProperties(prefix = "spring.datasource.batch")
-public class DatabaseProperties {
+@ConfigurationProperties(prefix = "spring.datasource")
+public class OrderDatabaseProperties {
     private String url;
     private String username;
     private String password;

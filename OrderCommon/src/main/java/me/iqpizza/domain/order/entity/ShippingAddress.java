@@ -7,10 +7,11 @@ import javax.persistence.*;
 @Getter
 @Builder
 @Entity(name = "shipping_address")
+@Table(schema = "order_service_db")
 @AllArgsConstructor @NoArgsConstructor
 public class ShippingAddress {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 10, nullable = false)

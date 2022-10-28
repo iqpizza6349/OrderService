@@ -8,11 +8,12 @@ import javax.persistence.*;
 @Getter
 @Inheritance
 @Entity(name = "order_payment")
+@Table(schema = "order_service_db")
 @DiscriminatorColumn(name = "method")
 @AllArgsConstructor @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class OrderPayment {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private long amount;

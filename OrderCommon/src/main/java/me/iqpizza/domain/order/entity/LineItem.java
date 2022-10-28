@@ -8,10 +8,11 @@ import javax.persistence.*;
 @Builder
 @ToString
 @Getter @Setter
+@Table(schema = "order_service_db")
 @AllArgsConstructor @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class LineItem {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;

@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/OrderBusiness" />
             <option value="$PROJECT_DIR$/OrderCommon" />
             <option value="$PROJECT_DIR$/OrderSecurity" />
+            <option value="$PROJECT_DIR$/OrderStaffBusiness" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -2,6 +2,8 @@ package me.iqpizza.batch.config.job;
 
 import me.iqpizza.batch.config.datasource.BatchDatabase;
 import me.iqpizza.batch.dto.OrderQuantity;
+import me.iqpizza.config.datasource.StaffDatabaseConfig;
+import me.iqpizza.global.config.datasource.OrderDatabaseConfig;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -25,7 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-@ComponentScan(basePackageClasses = BatchConfiguration.class)
+@ComponentScan(basePackageClasses = {BatchConfiguration.class, OrderDatabaseConfig.class, StaffDatabaseConfig.class})
 public class OrderBatchConfiguration {
 
     private final JobBuilderFactory jobBuilderFactory;
@@ -40,10 +42,11 @@ public class OrderBatchConfiguration {
     public OrderBatchConfiguration(JobBuilderFactory jobBuilderFactory,
                                    StepBuilderFactory stepBuilderFactory,
                                    @Qualifier("orderDataSource") DataSource orderDataSource,
-                                   @Qualifier("batchDataSource") DataSource batchDataSource) {
+                                   @Qualifier("staffDataSource") DataSource batchDataSource) {
         this.jobBuilderFactory = jobBuilderFactory;
         this.stepBuilderFactory = stepBuilderFactory;
         this.orderDataSource = orderDataSource;
+        System.out.println(orderDataSource);
         this.batchDatabase = new BatchDatabase(batchDataSource);
         this.jdbcTemplate = new JdbcTemplate(batchDataSource);
     }
@@ -99,7 +102,7 @@ public class OrderBatchConfiguration {
                 }
             });
             int totalPrice = price[0];
-            final String salesSQL = "update sales set daily_sales = ? where sales_id = " + key;
+            final String salesSQL = "update sales set dailySales = ? where id = " + key;
             jdbcTemplate.update(salesSQL, totalPrice);
         };
     }
@@ -110,10 +113,10 @@ public class OrderBatchConfiguration {
                 = new SqlPagingQueryProviderFactoryBean();
         queryProviderFactoryBean.setDataSource(orderDataSource);
         queryProviderFactoryBean.setSelectClause("select name, sum(qty) as totalQuantity, sum(price) as totalPrice");
-        queryProviderFactoryBean.setFromClause("from line_item");
+        queryProviderFactoryBean.setFromClause("from lineitem");
         queryProviderFactoryBean.setWhereClause(
-                "where line_item.order_id = " +
-                        "(select order_id from orders where ordered_at = STR_TO_DATE(NOW(), '%Y-%m-%d'))"
+                "where lineitem.order_id = " +
+                        "(select id from orders where orderedAt = STR_TO_DATE(NOW(), '%Y-%m-%d'))"
         );
         queryProviderFactoryBean.setGroupClause(
                 "group by name"

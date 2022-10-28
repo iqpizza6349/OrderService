@@ -7,8 +7,10 @@ import me.iqpizza.domain.order.entity.OrderPayment;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(schema = "order_service_db")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @DiscriminatorValue(value = OrderPayment.PaymentMethod.Values.MOBILE_PHONE)
 public class MobilePhonePayment extends OrderPayment {

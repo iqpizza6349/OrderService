@@ -15,6 +15,7 @@ import java.util.Set;
 @Getter
 @Builder
 @Entity(name = "orders")
+@Table(schema = "order_service_db")
 @AllArgsConstructor @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Order {
 

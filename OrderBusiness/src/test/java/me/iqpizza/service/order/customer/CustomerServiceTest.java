@@ -177,5 +177,4 @@ public class CustomerServiceTest {
         assertThat(orderRO.getId()).isEqualTo(orderId);
         assertThat(orderRO.getState()).isEqualTo(Order.OrderState.CANCELED);
     }
-
 }

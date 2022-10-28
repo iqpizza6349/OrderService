@@ -6,3 +6,4 @@ spring:
     include:
       - data
       - security
+      - staff
